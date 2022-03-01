@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:one_point_verification/controllers/menu_controller.dart';
+import 'package:one_point_verification/controllers/navigation_controller.dart';
 import 'package:one_point_verification/layout.dart';
 
 void main() {
   Get.put(MenuController());
+  Get.put(NavigationController());
   runApp(const MyApp());
 }
 
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
         }),
         primaryColor: Colors.blue,
       ),
-      home: SiteLayout(),
+      home: const SiteLayout(),
     );
   }
 }

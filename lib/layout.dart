@@ -5,8 +5,14 @@ import 'package:one_point_verification/widgets/side_menu.dart';
 import 'package:one_point_verification/widgets/small_screen.dart';
 import 'package:one_point_verification/widgets/top_nav.dart';
 
-// ignore: use_key_in_widget_constructors
-class SiteLayout extends StatelessWidget {
+class SiteLayout extends StatefulWidget {
+  const SiteLayout({Key? key}) : super(key: key);
+
+  @override
+  State<SiteLayout> createState() => _SiteLayoutState();
+}
+
+class _SiteLayoutState extends State<SiteLayout> {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 
   @override
