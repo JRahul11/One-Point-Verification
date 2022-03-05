@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:one_point_verification/constants/controllers.dart';
-import 'package:one_point_verification/constants/style.dart';
+import '../constants/controllers.dart';
+import '../constants/style.dart';
 import 'custom_text.dart';
 
 class HorizontalMenuItem extends StatelessWidget {

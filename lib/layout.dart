@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:one_point_verification/helpers/responsiveness.dart';
-import 'package:one_point_verification/widgets/large_screen.dart';
-import 'package:one_point_verification/widgets/side_menu.dart';
-import 'package:one_point_verification/widgets/small_screen.dart';
-import 'package:one_point_verification/widgets/top_nav.dart';
+import 'helpers/responsiveness.dart';
+import 'widgets/large_screen.dart';
+import 'widgets/side_menu.dart';
+import 'widgets/small_screen.dart';
+import 'widgets/top_nav.dart';
 
 class SiteLayout extends StatefulWidget {
   const SiteLayout({Key? key}) : super(key: key);

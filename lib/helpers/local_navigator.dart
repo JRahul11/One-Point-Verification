@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:one_point_verification/constants/controllers.dart';
-import 'package:one_point_verification/routing/router.dart';
-import 'package:one_point_verification/routing/routes.dart';
+import '../constants/controllers.dart';
+import '../routing/router.dart';
+import '../routing/routes.dart';
 
 Navigator localNavigator() => Navigator(
       key: navigationController.navigatorKey,
-      initialRoute: OverViewPageRoute,
+      initialRoute: DashboardPageRoute,
       onGenerateRoute: generateRoute,
     );

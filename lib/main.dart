@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:one_point_verification/controllers/menu_controller.dart';
-import 'package:one_point_verification/controllers/navigation_controller.dart';
-import 'package:one_point_verification/layout.dart';
+import 'controllers/menu_controller.dart';
+import 'controllers/navigation_controller.dart';
+import 'layout.dart';
 
 void main() {
   Get.put(MenuController());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "One Point Verification",
+      title: "OP-Verify",
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
         textTheme: GoogleFonts.mulishTextTheme(

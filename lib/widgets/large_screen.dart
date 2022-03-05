@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:one_point_verification/helpers/local_navigator.dart';
-import 'package:one_point_verification/widgets/side_menu.dart';
+import '../helpers/local_navigator.dart';
+import 'side_menu.dart';
 
 class LargeScreen extends StatelessWidget {
   const LargeScreen({Key? key}) : super(key: key);

@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:one_point_verification/pages/clients/clients.dart';
-import 'package:one_point_verification/pages/drivers/drivers.dart';
-import 'package:one_point_verification/pages/overview/overview.dart';
-import 'package:one_point_verification/routing/routes.dart';
+import '../pages/dashboard/dashboard.dart';
+import '../pages/faculty/faculty.dart';
+import '../pages/payment/payment.dart';
+import '../pages/student/student.dart';
+import 'routes.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
-    case OverViewPageRoute:
-      return _getPageRoute(const OverViewPage());
-    case DriversPageRoute:
-      return _getPageRoute(const DriversPage());
-    case ClientPageRoute:
-      return _getPageRoute(const ClientsPage());
+    case DashboardPageRoute:
+      return _getPageRoute(const DashboardPage());
+    case StudentPageRoute:
+      return _getPageRoute(const StudentPage());
+    case FacultyPageRoute:
+      return _getPageRoute(const FacultyPage());
+    case PaymentPageRoute:
+      return _getPageRoute(const PaymentPage());
     default:
-      return _getPageRoute(const OverViewPage());
+      return _getPageRoute(const DashboardPage());
   }
 }
 

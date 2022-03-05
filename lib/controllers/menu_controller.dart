@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:one_point_verification/constants/style.dart';
-import 'package:one_point_verification/routing/routes.dart';
+import '../constants/style.dart';
+import '../routing/routes.dart';
 
 class MenuController extends GetxController {
   static MenuController instance = Get.find();
-  var activeItem = OverViewPageRoute.obs;
+  var activeItem = DashboardPageRoute.obs;
   var hoverItem = "".obs;
 
   changeActiveItemTo(String itemName) {
@@ -22,16 +22,16 @@ class MenuController extends GetxController {
 
   Widget returnIconFor(String itemName) {
     switch (itemName) {
-      case OverViewPageRoute:
-        return _customIcon(Icons.trending_up, itemName);
-      case DriversPageRoute:
-        return _customIcon(Icons.drive_eta, itemName);
-      case ClientPageRoute:
+      case DashboardPageRoute:
+        return _customIcon(CupertinoIcons.square_stack_3d_up, itemName);
+      case StudentPageRoute:
+        return _customIcon(CupertinoIcons.book, itemName);
+      case FacultyPageRoute:
         return _customIcon(Icons.people_alt_outlined, itemName);
-      case AuthenticationPageRoute:
-        return _customIcon(Icons.exit_to_app, itemName);
+      case PaymentPageRoute:
+        return _customIcon(Icons.payment, itemName);
       default:
-        return _customIcon(Icons.exit_to_app, itemName);
+        return _customIcon(Icons.exit_to_app_outlined, itemName);
     }
   }
 

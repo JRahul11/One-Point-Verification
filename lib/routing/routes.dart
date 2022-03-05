@@ -1,11 +1,15 @@
-const OverViewPageRoute = "Overview";
-const DriversPageRoute = "Drivers";
-const ClientPageRoute = "Clients";
+// ignore_for_file: constant_identifier_names
+
+const DashboardPageRoute = "Dashboard";
+const StudentPageRoute = "Student";
+const FacultyPageRoute = "Faculty";
+const PaymentPageRoute = "Payment";
 const AuthenticationPageRoute = "Authentication";
 
 List sideMenuItems = [
-  OverViewPageRoute,
-  DriversPageRoute,
-  ClientPageRoute,
+  DashboardPageRoute,
+  StudentPageRoute,
+  FacultyPageRoute,
+  PaymentPageRoute,
   AuthenticationPageRoute
 ];

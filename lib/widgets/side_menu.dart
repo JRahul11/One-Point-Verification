@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
-import 'package:one_point_verification/constants/controllers.dart';
-import 'package:one_point_verification/constants/style.dart';
-import 'package:one_point_verification/helpers/responsiveness.dart';
-import 'package:one_point_verification/routing/routes.dart';
-import 'package:one_point_verification/widgets/custom_text.dart';
-import 'package:one_point_verification/widgets/side_menu_item.dart';
+import '../constants/controllers.dart';
+import '../constants/style.dart';
+import '../helpers/responsiveness.dart';
+import '../routing/routes.dart';
+import 'custom_text.dart';
+import 'side_menu_item.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({Key? key}) : super(key: key);
@@ -29,14 +29,10 @@ class SideMenu extends StatelessWidget {
                 Row(
                   children: [
                     SizedBox(width: _width / 48),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 12),
-                      child: Image.asset("assets/icons/logo.png"),
-                    ),
                     Flexible(
                       child: CustomText(
-                        text: "Dash",
-                        size: 20,
+                        text: "AICTE",
+                        size: 30,
                         weight: FontWeight.bold,
                         color: active,
                       ),
@@ -46,8 +42,11 @@ class SideMenu extends StatelessWidget {
                 ),
               ],
             ),
-          Divider(
-            color: lightGrey.withOpacity(.1),
+          // Divider(
+          //   color: lightGrey.withOpacity(.1),
+          // ),
+          const SizedBox(
+            height: 25,
           ),
           Column(
             mainAxisSize: MainAxisSize.min,
